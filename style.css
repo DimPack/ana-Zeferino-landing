@@ -18,6 +18,10 @@ img{
     width: 100%;
     object-fit: cover;
 }
+ul{
+    padding-left: 0;
+    list-style: none;
+}
 h1,h2,h3,h4 {
     font-family: "Yeseva One", serif;
     font-weight: 400;
@@ -26,6 +30,9 @@ h1,h2,h3,h4 {
 .wrapper {
     display: flex;
     flex-direction: column;
+}
+.cross-center {
+    align-items: center;
 }
 @media screen and (min-width: 768px) {
     :root{
