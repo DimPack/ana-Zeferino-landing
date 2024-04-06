@@ -1,0 +1,33 @@
+.contact-menu-item {
+    display: inline-block;
+    margin-right: 0.6rem;
+}
+.contact-menu-link {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.email {
+    background-image: url(./../icons/Mail.svg);
+}
+.instagram {
+    background-image: url(./../icons/Instagram.svg);
+}
+.behance {
+    background-image: url(./../icons/Behance.svg);
+}
+.linkedin {
+    background-image: url(./../icons/LinkedIN.svg);
+}
+.vider {
+    background-image: url(./../icons/WhatsApp.svg);
+}
+
+@media screen and (min-width: 1280px) {
+    .contact-menu-link{
+        width: 44px;
+        height: 44px;
+    }
+}

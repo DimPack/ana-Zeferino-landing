@@ -1,0 +1,42 @@
+.welcome {
+    background-color: var(--bg-color-light);
+}
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.welcome-heading {
+    margin: 0;
+    font-size: 2.9rem;
+}
+.welcome-text {
+    margin-top: 0;
+    font-size: 0.75rem;
+}
+.photo {
+    display: block;
+}
+@media screen and (min-width: 768px) {
+    .welcome-heading {
+        font-size: 3.8rem;
+    }
+    .welcome-text {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .welcome {
+        background-image: url(./../icons/leaf.png);
+        background-repeat: no-repeat;
+        background-position-x: 0px;
+        background-position-y: 70px;
+    }
+    .welcome-heading {
+        font-size: 5.3rem;
+    }
+    .welcome-text {
+        font-size: 1.75rem;
+    }
+}

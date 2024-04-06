@@ -1,0 +1,51 @@
+.servicos {
+
+}
+.title-blocks {
+    width: 100%;
+    font-size: 2.5rem;
+    margin: 3.75rem 0 2.5rem;
+}
+.servico-wrapper:not(:last-child) {
+    padding-bottom: 5px;
+}
+.servico-article {
+    color: #F5F9ED;
+    background-color: #31533B;
+    padding: 2.5rem 1.2rem;
+}
+.title-article {
+    font-size: 2.25rem;
+    margin-bottom: 12px;
+}
+.title-article-subtitle {
+    font-size: 1rem;
+    font-weight: lighter;
+    margin: 0;
+}
+.servico-description {
+    color: #B3B476;
+}
+.servicos-accordion {
+    max-width: 380px;
+    min-width: 300px;
+    width: 100%;
+    height: 58px;
+    background-color: #B3B476;
+    border: 2px solid #CDDAB2;
+    margin-top: 10px;
+    padding: 0;
+    cursor: pointer;
+}
+.accordion-item {
+    text-align: left;
+    font-size: 0.9rem;
+    margin: 8px 125px 8px 15px;
+}
+
+@media screen and (min-width: 768px) {
+    :root{
+        font-size: 18px;
+    }
+    
+}
