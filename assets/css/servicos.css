@@ -6,13 +6,19 @@
     font-size: 2.5rem;
     margin: 3.75rem 0 2.5rem;
 }
+.servico-wrapper {
+    display: flex;
+}
+ .row:first-child .servico-wrapper{
+    padding-right: 5px;
+}
 .servico-wrapper:not(:last-child) {
     padding-bottom: 5px;
 }
 .servico-article {
     color: #F5F9ED;
     background-color: #31533B;
-    padding: 2.5rem 1.2rem;
+    padding: 2.5rem 1rem;
 }
 .title-article {
     font-size: 2.25rem;
@@ -26,26 +32,96 @@
 .servico-description {
     color: #B3B476;
 }
+.servico-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .servicos-accordion {
     max-width: 380px;
     min-width: 300px;
     width: 100%;
     height: 58px;
+    position: relative;
+    margin: 10px 0;
+    padding: 0;
     background-color: #B3B476;
     border: 2px solid #CDDAB2;
-    margin-top: 10px;
-    padding: 0;
     cursor: pointer;
 }
+.servicos-accordion::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-bottom: 2px solid #1A3923;
+    border-right: 2px solid #1A3923;
+    top: 50%;
+    top: 50%;
+    right: 30px;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
 .accordion-item {
+    color: #0E2715;
     text-align: left;
     font-size: 0.9rem;
+    font-weight: 600;
     margin: 8px 125px 8px 15px;
 }
-
+.btn-red {
+    display: inline-block;
+    position: relative;
+    padding: 15px 30px 15px 70px;
+    font-weight: 600;
+    background-color: #CE4115;
+    border: 1px solid black;
+    text-transform: uppercase;
+}
+.btn-red::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 17px;
+    left: 10px;
+    border-bottom: 2px solid #E9A37C;
+    border-left: 2px solid #E9A37C;
+    transform: translate(50%) rotate(-45deg);
+}
+.btn-be {
+    display: inline-block;
+    position: relative;
+    margin: 8px auto;
+    padding: 15px 27px 15px 70px;
+    font-weight: 600;
+    background-color: transparent;
+    border: 1px solid #CE4115;
+    text-transform: uppercase;
+}
+.btn-be::before {
+    content: url('./../icons/Behance.png');
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 30px;
+}
 @media screen and (min-width: 768px) {
     :root{
         font-size: 18px;
+    }
+    .servico-article {
+        padding: 2.5rem
+    }
+
+    
+}
+@media screen and (min-width: 980px) {
+    .row>.servico-wrapper:last-child .servico-buttons{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .servico-article {
+        padding: 2.5rem 3rem;
     }
     
 }
