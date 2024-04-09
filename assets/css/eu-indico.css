@@ -1,0 +1,54 @@
+.eu-indico {
+    margin: 3.75rem 0;
+    padding: 3.75rem 0;
+    background-color: #B3B476;
+}
+.ue-indico-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+.ue-indico-article {
+    display: flex;
+    justify-content: space-between;
+}
+.ue-indico-article:not(:first-child) {
+    margin-top: 20px;
+}
+.ue-indico-image {
+    width: 100px;
+    height: 100px;
+    background-color: #DCDCDC;
+    border: 1px solid black;
+}
+.ue-indico-acessar {
+    display: flex;
+    flex-direction: column;
+}
+.ue-indico-acessar-item {
+}
+.cursor {
+    max-width: 170px;
+    min-width: 140px;
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+}
+.cursor::before {
+    content: url('./../icons/Cursor.svg');
+    position: absolute;
+    width: 13px;
+    height: 13px;    
+    left: 25px;
+    transition: all .5s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+    .ue-indico-article {
+        justify-content: center;
+    }
+    .ue-indico-article > .ue-indico-image {
+        margin-right: 1rem;
+    }
+}
