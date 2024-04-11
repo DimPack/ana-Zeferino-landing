@@ -7,11 +7,12 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 100%;
+    
 }
 .ue-indico-article {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 .ue-indico-article:not(:first-child) {
     margin-top: 20px;
