@@ -2,19 +2,19 @@
     display: flex;
 }
  .row:first-child .servico-wrapper{
-    padding-right: 5px;
+    padding-right: 0.3rem;
 }
 .servico-wrapper:not(:last-child) {
-    padding-bottom: 5px;
+    padding-bottom: 0.3rem;
 }
 .servico-article {
-    color: #F5F9ED;
-    background-color: #31533B;
+    color: var(--bg-color-white);
+    background-color: var(--bg-color-light-green);
     padding: 2.5rem 1rem;
 }
 .title-article {
     font-size: 2.25rem;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
 }
 .title-article-subtitle {
     font-size: 1rem;
@@ -22,7 +22,7 @@
     margin: 0;
 }
 .servico-description {
-    color: #B3B476;
+    color: var(--bg-color-olive-green);
 }
 .servico-buttons {
     display: flex;
@@ -41,24 +41,23 @@
     background-image: url('./../icons/down.svg');
     background-repeat: no-repeat;
     background-position: calc(100% - 16px) center;
-    padding-right: 40px; 
-    background-color: #B3B476;
+    padding-right: 2.5rem; 
+    background-color: var(--bg-color-olive-green);
     border: 2px solid var(--bg-color-light);
     cursor: pointer;
     appearance: none;
 
 }
 .accordion-item {
-    color: #0E2715;
+    color: var(--color-text-accordion);
     text-align: left;
     font-size: 0.9rem;
     font-weight: 600;
-    margin: 8px 120px 8px 15px;
+    margin: 0.5rem 7.5rem 0.5rem 0.9rem;
 }
 .check-mark {
-    padding: 15px 30px 15px 70px;
+    padding: 0.9rem 1.9rem 0.9rem 4.4rem;
 }
-
 .check-mark:hover::before {
     transform: translate(50%) rotate(-45deg) scale(1.3);
 }
@@ -68,23 +67,23 @@
     width: 25px;
     height: 17px;
     left: 10px;
-    border-bottom: 2px solid #E9A37C;
-    border-left: 2px solid #E9A37C;
+    border-bottom: 2px solid var(--border-color-arrows-carousel);
+    border-left: 2px solid var(--border-color-arrows-carousel);
     transform: translate(50%) rotate(-45deg);
     transition: all .5s ease-in-out;
 }
 .btn-be:hover {
-    background-color: #50505062;
-    border: 1px solid #ffffff;
+    background-color: var(--color-text-accordion);
+    border: 1px solid var(--border-color-bottom-main-menu);
 }
 .btn-be {
     display: inline-block;
     position: relative;
-    margin: 8px auto;
-    padding: 15px 27px 15px 70px;
+    margin: 0.5rem auto;
+    padding: 0.9rem 1.7rem 0.9rem 4.4rem;
     font-weight: 600;
     background-color: transparent;
-    border: 1px solid #CE4115;
+    border: 1px solid var(--bg-color-red-btn);
     text-transform: uppercase;
     transition: all .5s ease-in-out;
 }
@@ -108,5 +107,4 @@
     .servico-article {
         padding: 2.5rem 3rem;
     }
-
 }

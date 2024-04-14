@@ -1,6 +1,6 @@
 .footer {
     padding: 2.5rem 1rem;
-    background-color: #F5F9ED;
+    background-color: var(--bg-color-white);
 }
 .footer-block {
     display: flex;

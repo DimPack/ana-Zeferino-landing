@@ -5,8 +5,8 @@
 }
 .carousel::after {
     content: '\275D';
-    font-size: 5rem;
     position: absolute;
+    font-size: 5rem;
     top: -2.9rem;
     left: 15%;
     color: #CE4115;
@@ -26,8 +26,8 @@
     position: absolute;
     width: 14px;
     height: 14px;
-    border-left: 2px solid #E9A37C;
-    border-bottom: 2px solid #E9A37C;
+    border-left: 2px solid var(--border-color-arrows-carousel);
+    border-bottom: 2px solid var(--border-color-arrows-carousel);
     top: 50%;
     left: -2rem;
     transform: rotate(45deg);
@@ -38,8 +38,8 @@
     position: absolute;
     width: 14px;
     height: 14px;
-    border-left: 2px solid #E9A37C;
-    border-bottom: 2px solid #E9A37C;
+    border-left: 2px solid var(--border-color-arrows-carousel);
+    border-bottom: 2px solid var(--border-color-arrows-carousel);
     top: 50%;
     right: -2rem;
     transform: rotate(225deg);

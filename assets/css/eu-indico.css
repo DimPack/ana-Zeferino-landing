@@ -1,7 +1,7 @@
 .eu-indico {
     margin: 3.75rem 0;
     padding: 3.75rem 0;
-    background-color: #B3B476;
+    background-color: var(--bg-color-olive-green);
 }
 .ue-indico-wrapper {
     display: flex;
@@ -20,14 +20,12 @@
 .ue-indico-image {
     width: 100px;
     height: 100px;
-    background-color: #DCDCDC;
+    background-color: #DCDCDC; /*тут мають бути фото тому ці кольори не виносив*/
     border: 1px solid black;
 }
 .ue-indico-acessar {
     display: flex;
     flex-direction: column;
-}
-.ue-indico-acessar-item {
 }
 .cursor {
     max-width: 170px;
