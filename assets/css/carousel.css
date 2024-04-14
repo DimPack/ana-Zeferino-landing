@@ -1,0 +1,62 @@
+.carousel {
+    position: relative;
+    padding: 3rem 2.5rem 5rem 2.5rem;
+    background-color: var(--bg-color-light);
+}
+.carousel::after {
+    content: '\275D';
+    font-size: 5rem;
+    position: absolute;
+    top: -2.9rem;
+    left: 15%;
+    color: #CE4115;
+}
+.carousel-text {
+    margin-top: 1.2rem;
+}
+.author {
+    margin-left: auto;
+    font-weight: bold;
+}
+.carousel-wrapper {
+    position: relative;
+}
+.carousel-wrapper::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-left: 2px solid #E9A37C;
+    border-bottom: 2px solid #E9A37C;
+    top: 50%;
+    left: -2rem;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.carousel-wrapper::before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-left: 2px solid #E9A37C;
+    border-bottom: 2px solid #E9A37C;
+    top: 50%;
+    right: -2rem;
+    transform: rotate(225deg);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .carousel::after{
+        font-size: 12.5rem;
+        top: -7.5rem
+    }
+}
+@media screen and (min-width: 1280px) {
+    .carousel {
+        background-image: url(./../icons/leaf_bottom.png);
+        background-repeat: no-repeat;
+        background-position-x: 100%;
+        background-position-y: 130px;
+    }
+}

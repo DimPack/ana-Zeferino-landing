@@ -1,0 +1,12 @@
+.footer {
+    padding: 2.5rem 1rem;
+    background-color: #F5F9ED;
+}
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.copyright {
+    margin: auto;
+}

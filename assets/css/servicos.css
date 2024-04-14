@@ -43,7 +43,7 @@
     background-position: calc(100% - 16px) center;
     padding-right: 40px; 
     background-color: #B3B476;
-    border: 2px solid #CDDAB2;
+    border: 2px solid var(--bg-color-light);
     cursor: pointer;
     appearance: none;
 

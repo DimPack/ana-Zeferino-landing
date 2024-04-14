@@ -1,0 +1,38 @@
+.about-me {
+    position: relative;
+    background-color: #31533B;
+    margin-top: 7rem;
+}
+.about-me-block {
+    padding: 2.5rem 0.8rem 3rem 0.8rem;
+}
+.about-foto {
+    position: absolute;
+    max-width: 124px;
+    top: -3.75rem;
+    right: 2rem;
+}
+.about-title {
+    color: #F5F9ED;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.about-me-text {
+    color: var(--bg-color-light);
+}
+
+@media screen and (min-width: 993px) {
+    .about-me {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 622px;
+    }
+    .about-foto {
+        max-width: 487px;
+        top: -6rem;
+    }
+    .about-title {
+        font-size: 5rem;
+    }
+}
